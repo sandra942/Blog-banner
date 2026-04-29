@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Institutional BTR investment surges to £2.5 billion — REalyse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ── Reset & Base ─────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; }
+ 
+  :root {
+    --white: #ffffff;
+    --brand-blue: #0f1642;
+    --paragraph-font: 'Roboto', Verdana, sans-serif;
+    --heading-font: 'Poppins', Arial, sans-serif;
+    --paragraph-color: #676869;
+    --dark-slate: #3d455a;
+    --purple: #705fd3;
+    --light-purple: #5357f2;
+    --medium-aqua: #3fdeae;
+    --gold: #fdd241;
+    --black: #1f2033;
+    --nav-height: 70px;
+  }
+ 
+  html { height: 100%; font-family: var(--paragraph-font); }
+  body {
+    min-height: 100%;
+    margin: 0;
+    background-color: var(--white);
+    font-family: var(--paragraph-font);
+    color: var(--dark-slate);
+    font-size: 16px;
+    line-height: 26px;
+  }
+ 
+  img { border: 0; vertical-align: middle; max-width: 100%; display: inline-block; }
+  a { background-color: transparent; text-decoration: none; }
+  a:hover, a:active { outline: 0; }
+  p { margin-top: 0; margin-bottom: 10px; }
+  ul { margin-top: 0; margin-bottom: 10px; padding-left: 0; list-style: none; }
+  h1, h2, h3, h4, h5, h6 { font-family: var(--heading-font); }
+  h2 { font-size: 48px; font-weight: 600; line-height: 60px; }
+  h4 { color: var(--brand-blue); margin-top: 10px; margin-bottom: 10px; font-size: 24px; font-weight: 500; line-height: 40px; }
+  h6 { margin-top: 10px; margin-bottom: 10px; font-size: 18px; font-weight: 600; line-height: 22px; }
+  strong { font-weight: 700; }
+  button { cursor: pointer; border: 0; font: inherit; overflow: visible; text-transform: none; appearance: button; }
+ 
+  /* ── Layout ────────────────────────────────────────────────── */
+  .custom-container {
+    max-width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 25px;
+    position: relative;
+    z-index: 6;
+    height: 100%;
+  }
+ 
+  /* ── Header / Nav ───────────────────────────────────────────── */
+  .header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+    height: var(--nav-height);
+    background-color: #f8f8fb;
+    box-shadow: 1px 0 15px rgba(0,0,0,0.1);
+    transition: 0.5s ease-in-out;
+  }
+ 
+  .inner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+ 
+  .logo-wrapper {
+    display: flex;
+    width: 15%;
+    align-items: center;
+  }
+ 
+  .logo-text {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--brand-blue);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+ 
+  .logo-text span {
+    color: var(--purple);
+  }
+ 
+  .buttons-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: right;
+    justify-content: flex-end;
+    width: 32%;
+    padding-right: 65px;
+  }
+ 
+  .solid-btn {
+    font-family: var(--paragraph-font);
+    color: #fff;
+    text-align: center;
+    background-color: var(--brand-blue);
+    border: 1px solid var(--brand-blue);
+    border-radius: 60px;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+ 
+  .solid-btn:hover { background: var(--light-purple); border-color: var(--light-purple); }
+ 
+  .hollow-btn {
+    border: 1px solid var(--brand-blue);
+    background-color: var(--white);
+    font-family: var(--paragraph-font);
+    color: var(--brand-blue);
+    text-align: center;
+    border-radius: 60px;
+    padding: 12px 28px;
+    font-size: 15px;
+    line-height: 18px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+ 
+  .hollow-btn:hover { background-color: var(--brand-blue); color: var(--white); }
+ 
+  /* ── Hamburger ─────────────────────────────────────────────── */
+  .hamburger {
+    position: absolute;
+    right: 0;
+    z-index: 99999;
+    cursor: pointer;
+    width: 50px;
+    height: 14px;
+    padding: 7px 0;
+    transition: 0.5s ease-in-out 0.1s;
+    display: none;
+  }
+ 
+  .bar {
+    background-color: var(--brand-blue);
+    width: 47px;
+    height: 2px;
+    position: absolute;
+    top: 0; left: 0;
+    transition: 0.5s ease-in-out;
+  }
+ 
+  .bar.bar2 { width: 30px; top: auto; bottom: 0; }
+  .hamburger:hover .bar2 { width: 47px; }
+ 
+  /* ── Blog Hero ─────────────────────────────────────────────── */
+  .blog-single-hero {
+    background-color: var(--white);
+    background-image: linear-gradient(180deg, #f8f8fb 0%, #f8f8fb 50%, #fff 50%, #fff 100%);
+    margin-top: var(--nav-height);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+    overflow: hidden;
+  }
+ 
+  .blog-single-hero-graph {
+    position: absolute;
+    top: -80px; right: 0; bottom: 0;
+    display: block;
+    pointer-events: none;
+    opacity: 0.35;
+  }
+ 
+  .blog-single-hero-graph img { height: 100%; }
+ 
+  .hero-label {
+    font-family: var(--heading-font);
+    color: var(--brand-blue);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 85px;
+    margin: 0 0 0;
+  }
+ 
+  .feature-image-section {
+    height: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+ 
+  .feature-image-section img {
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+    max-height: 520px;
+    display: block;
+  }
+ 
+  /* ── Article Body ───────────────────────────────────────────── */
+  .article-outer {
+    padding-bottom: 150px;
+    font-size: 16px;
+  }
+ 
+  .article-inner {
+    width: 100%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+ 
+  .article-date {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+ 
+  .article-title {
+    font-family: var(--heading-font);
+    color: var(--brand-blue);
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 45px;
+    line-height: 55px;
+  }
+ 
+  /* ── Share bar ─────────────────────────────────────────────── */
+  .share-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    margin: 0 0 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(15,22,66,0.12);
+  }
+ 
+  .share-label {
+    color: var(--paragraph-color);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+ 
+  .share-icon-btn {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(15,22,66,0.12);
+    background-color: #fff;
+    color: var(--brand-blue);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    padding: 0;
+  }
+ 
+  .share-icon-btn:hover { background-color: var(--brand-blue); color: #fff; border-color: var(--brand-blue); }
+  .share-icon-btn svg { display: block; }
+ 
+  /* ── Rich text content ─────────────────────────────────────── */
+  .rich-text h4 {
+    color: var(--brand-blue);
+    margin-top: 36px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+ 
+  .rich-text p {
+    color: var(--dark-slate);
+    line-height: 28px;
+    margin-bottom: 18px;
+  }
+ 
+  .rich-text strong { font-weight: 700; color: var(--brand-blue); }
+ 
+ 
+ 
+  /* ── Blog Recent Section ────────────────────────────────────── */
+  .blog-recent-section {
+    background-color: #f8fafc;
+    margin-bottom: 100px;
+    padding: 40px 0 60px;
+  }
+ 
+  .blog-recent-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 25px;
+  }
+ 
+  .section-heading {
+    color: var(--brand-blue);
+    padding-left: 0;
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+ 
+  .cards-grid {
+    display: flex;
+    gap: 16px;
+  }
+ 
+  .blog-card-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .blog-card {
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: rgba(0,0,0,0.05) 0px 4px 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+ 
+  .blog-card:hover { transform: translateY(-3px); box-shadow: rgba(0,0,0,0.1) 0px 8px 30px; }
+ 
+  .blog-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+ 
+  /* placeholder if no image */
+  .blog-card-img-placeholder {
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+ 
+  .blog-card-body {
+    padding: 20px 20px 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .blog-card-title {
+    font-family: var(--paragraph-font);
+    color: var(--brand-blue);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+ 
+  .blog-card-summary {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+ 
+  .read-more {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+    padding: 16px 0 20px;
+    text-decoration: none;
+  }
+ 
+  .read-more span {
+    color: var(--light-purple);
+    font-size: 15px;
+    font-family: var(--paragraph-font);
+    transition: text-decoration 0.2s;
+  }
+ 
+  .read-more:hover span { text-decoration: underline; }
+ 
+  /* ── Footer ────────────────────────────────────────────────── */
+  .new-footer { background-color: #010311; }
+ 
+  .contact-info {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 165px;
+    margin-top: -75px;
+    margin-bottom: 75px;
+    padding: 50px 25px;
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 30px;
+  }
+ 
+  .cont-info-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+ 
+  .cont-info-box._1 { width: 28%; }
+  .cont-info-box._2 { width: 30%; }
+  .cont-info-box._3 { width: 38%; }
+ 
+  .divider-2 {
+    background-color: var(--brand-blue);
+    width: 1px;
+    height: 60px;
+    margin: 0 50px;
+  }
+ 
+  .icon-area {
+    background-color: var(--brand-blue);
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 24px;
+  }
+ 
+  .heading-63 {
+    font-family: var(--heading-font);
+    color: var(--brand-blue);
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+ 
+  .cont-link {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    font-size: 15px;
+  }
+ 
+  .cont-link:hover { color: var(--brand-blue); }
+ 
+  .footer-middle-part {
+    text-align: center;
+    padding: 10px 0 50px;
+  }
+ 
+  .footer-logo-area {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .footer-logo-text {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: -0.5px;
+  }
+ 
+  .footer-logo-text span { color: var(--purple); }
+ 
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+ 
+  .social-icon-box {
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+ 
+  .social-icon-box:hover { border-color: #fff; background-color: rgba(255,255,255,0.1); }
+ 
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 0;
+  }
+ 
+  .link-2 {
+    font-family: var(--paragraph-font);
+    color: #d6d6d6;
+    padding: 0 35px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    text-decoration: none;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    transition: color 0.3s;
+  }
+ 
+  .link-2:last-child { border-right: 0; }
+  .link-2:hover { color: #fff; }
+ 
+  .footer-bottom {
+    border-top: 1px solid #1d1f2f;
+    padding: 25px 0;
+  }
+ 
+  .footer-bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+ 
+  .copyright {
+    font-family: var(--paragraph-font);
+    color: #a2a4af;
+    font-size: 14px;
+    line-height: 20px;
+  }
+ 
+  .footer-last-menu {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+ 
+  .link-3 {
+    font-family: var(--paragraph-font);
+    color: #a2a4af;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    transition: color 0.3s;
+  }
+ 
+  .link-3:last-child { border-right: 0; }
+  .link-3:hover { color: #fff; }
+ 
+  /* ── Mobile ────────────────────────────────────────────────── */
+  @media screen and (max-width: 991px) {
+    .logo-wrapper { width: 25%; }
+    .buttons-nav { width: 50%; }
+    .hero-label { font-size: 60px; line-height: 70px; }
+    .article-title { font-size: 40px; line-height: 50px; }
+    .contact-info { flex-wrap: wrap; height: auto; gap: 25px; }
+    .cont-info-box._1, .cont-info-box._2 { width: 40%; }
+    .cont-info-box._3 { width: 85%; }
+    .divider-2 { display: none; }
+  }
+ 
+  @media screen and (max-width: 767px) {
+    .solid-btn, .hollow-btn { display: none; }
+    .hamburger { display: block; }
+    .buttons-nav { width: 75%; }
+    .hero-label { font-size: 50px; line-height: 60px; }
+    .blog-single-hero { padding-top: 60px; padding-bottom: 60px; }
+    .article-title { font-size: 32px; line-height: 42px; }
+    .cards-grid { flex-direction: column; }
+    .contact-info { flex-direction: column; align-items: flex-start; }
+    .cont-info-box._1, .cont-info-box._2, .cont-info-box._3 { width: 100%; }
+  }
+ 
+  @media screen and (max-width: 479px) {
+    .logo-wrapper { width: 40%; }
+    .hero-label { font-size: 40px; line-height: 50px; }
+    .article-title { font-size: 28px; line-height: 38px; }
+  }
+ 
+ 
+ 
+  #floatingBanner {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 80px);
+    max-width: 920px;
+    z-index: 998;
+    background: #fff;
+    border: 1px solid rgba(15,22,66,0.1);
+    border-radius: 16px;
+    box-shadow: rgba(15,22,66,0.18) 0px 8px 40px -8px;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    transition: bottom 480ms cubic-bezier(0.4,0,0.2,1), left 480ms cubic-bezier(0.4,0,0.2,1),
+      width 480ms cubic-bezier(0.4,0,0.2,1), max-width 480ms cubic-bezier(0.4,0,0.2,1),
+      border-radius 480ms cubic-bezier(0.4,0,0.2,1), padding 480ms cubic-bezier(0.4,0,0.2,1),
+      opacity 300ms ease, transform 300ms ease;
+  }
+  #floatingBanner.bar {
+    bottom: 0; left: 0; transform: none; width: 100%; max-width: 100%;
+    border-radius: 20px 20px 0 0; padding: 14px 40px;
+    box-shadow: rgba(15,22,66,0.14) 0px -4px 28px -4px;
+  }
+  #floatingBanner.hidden { opacity: 0; pointer-events: none; }
+  #floatingBanner:not(.bar).hidden { transform: translateX(-50%) translateY(16px); }
+  #floatingBanner.bar.hidden { transform: translateY(100%); }
+ 
+  #inlineCard {
+    background: #fff;
+    border: 1px solid rgba(15,22,66,0.1);
+    border-radius: 16px;
+    box-shadow: rgba(15,22,66,0.08) 0px 4px 24px;
+    padding: 32px 40px;
+    margin: 48px 0 0;
+  }
+ 
+  .sb-inner { display:flex; align-items:center; gap:16px; justify-content:space-between; width:100%; }
+  .sb-left  { display:flex; align-items:center; gap:14px; min-width:0; flex:1; }
+  .sb-icon  { border-radius:50%; background-color:var(--brand-blue); color:#fff; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; }
+  #floatingBanner .sb-icon { width:42px; height:42px; }
+  #inlineCard .sb-icon     { width:56px; height:56px; }
+  .sb-text { min-width:0; }
+  .sb-title { font-family:var(--heading-font); color:var(--brand-blue); font-weight:700; margin:0 0 2px; white-space:nowrap; }
+  #floatingBanner .sb-title { font-size:15px; line-height:20px; }
+  #inlineCard .sb-title     { font-size:24px; line-height:30px; margin-bottom:6px; }
+  .sb-subtitle { color:#676869; margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #floatingBanner .sb-subtitle { font-size:12px; }
+  #inlineCard .sb-subtitle     { font-size:15px; line-height:22px; white-space:normal; }
+  .sb-actions { display:flex; align-items:center; gap:8px; flex-shrink:0; }
+  #inlineCard .sb-inner { flex-wrap:wrap; }
+  #inlineCard .sb-actions { flex-wrap:wrap; margin-top:8px; }
+  .sb-btn { display:inline-flex; align-items:center; justify-content:center; gap:6px; border-radius:60px;
+    font-family:var(--paragraph-font); font-weight:500; line-height:16px; text-decoration:none;
+    cursor:pointer; white-space:nowrap; border:1px solid rgba(15,22,66,0.15);
+    transition: opacity 0.2s, background-color 0.2s; }
+  #floatingBanner .sb-btn { padding:9px 16px; font-size:13px; }
+  #inlineCard .sb-btn     { padding:13px 22px; font-size:15px; }
+  .sb-btn-primary  { background-color:var(--brand-blue); border-color:var(--brand-blue); color:#fff; }
+  .sb-btn-primary:hover { opacity:0.85; }
+  .sb-btn-secondary { background-color:#fff; color:var(--brand-blue); }
+  .sb-btn-secondary:hover { background-color:#f3f4f6; }
+  @media (max-width:767px) { #floatingBanner { display:none; } }
+ 
+</style>
+</head>
+<body>
+ 
+  <!-- ── HEADER ──────────────────────────────────────────────── -->
+  <header class="header">
+    <div class="custom-container">
+      <div class="inner-section">
+        <div class="logo-wrapper">
+          <a href="#" class="logo-text">R<span>≡</span>alyse</a>
+        </div>
+        <div class="buttons-nav">
+          <a href="#" class="solid-btn">Try Free Demo</a>
+          <a href="#" class="hollow-btn">Log In</a>
+          <div class="hamburger" id="hamburger" aria-label="Open menu">
+            <div class="bar"></div>
+            <div class="bar bar2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- ── BLOG HERO ────────────────────────────────────────────── -->
+  <section class="blog-single-hero">
+    <div class="blog-single-hero-graph" aria-hidden="true">
+      <!-- decorative circles SVG -->
+      <svg width="500" height="600" viewBox="0 0 500 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="350" cy="200" r="280" stroke="#0f1642" stroke-width="1" opacity="0.06"/>
+        <circle cx="350" cy="200" r="200" stroke="#0f1642" stroke-width="1" opacity="0.08"/>
+        <circle cx="350" cy="200" r="120" stroke="#0f1642" stroke-width="1" opacity="0.1"/>
+        <circle cx="350" cy="200" r="50" stroke="#0f1642" stroke-width="1.5" opacity="0.12"/>
+      </svg>
+    </div>
+    <div class="custom-container">
+      <h1 class="hero-label">BLOGS</h1>
+      <div class="feature-image-section">
+        <!-- Placeholder gradient image -->
+        <div style="width:100%;height:460px;background:linear-gradient(135deg,#1a237e 0%,#283593 30%,#1565c0 60%,#0d47a1 100%);border-radius:20px;display:flex;align-items:center;justify-content:center;">
+          <div style="text-align:center;color:rgba(255,255,255,0.4);font-family:var(--heading-font);font-size:18px;letter-spacing:0.05em;">BLOG FEATURE IMAGE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ── ARTICLE BODY ─────────────────────────────────────────── -->
+  <div class="article-outer">
+    <div class="article-inner">
+ 
+      <p class="article-date">April 23, 2026</p>
+ 
+      <h2 class="article-title">
+        Institutional BTR investment surges to £2.5 billion as single-family rental portfolios signal the sector's next growth frontier
+      </h2>
+ 
+      <!-- Share bar -->
+      <div class="share-bar">
+        <span class="share-label">Share</span>
+ 
+        <!-- X / Twitter -->
+        <a href="#" class="share-icon-btn" aria-label="Share on X">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M218.12,209.56l-61-95.8,59.72-65.69a12,12,0,0,0-17.76-16.14L143.81,92.77,106.12,33.56A12,12,0,0,0,96,28H48A12,12,0,0,0,37.88,46.44l61,95.8L39.12,207.93a12,12,0,1,0,17.76,16.14l55.31-60.84,37.69,59.21A12,12,0,0,0,160,228h48a12,12,0,0,0,10.12-18.44ZM166.59,204,69.86,52H89.41l96.73,152Z"/>
+          </svg>
+        </a>
+ 
+        <!-- LinkedIn -->
+        <a href="#" class="share-icon-btn" aria-label="Share on LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"/>
+          </svg>
+        </a>
+ 
+        <!-- Facebook -->
+        <a href="#" class="share-icon-btn" aria-label="Share on Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z"/>
+          </svg>
+        </a>
+ 
+        <!-- Copy link -->
+        <button class="share-icon-btn" aria-label="Copy link" id="copyLinkBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M117.18,188.74a12,12,0,0,1,0,17l-5.12,5.12A58.26,58.26,0,0,1,70.6,228h0A58.62,58.62,0,0,1,29.14,127.92L63.89,93.17a58.64,58.64,0,0,1,98.56,28.11,12,12,0,1,1-23.37,5.44,34.65,34.65,0,0,0-58.22-16.58L46.11,144.89A34.62,34.62,0,0,0,70.57,204h0a34.41,34.41,0,0,0,24.49-10.14l5.11-5.12A12,12,0,0,1,117.18,188.74ZM226.83,45.17a58.65,58.65,0,0,0-82.93,0l-5.11,5.11a12,12,0,0,0,17,17l5.12-5.12a34.63,34.63,0,1,1,49,49L175.1,145.86A34.39,34.39,0,0,1,150.61,156h0a34.63,34.63,0,0,1-33.69-26.72,12,12,0,0,0-23.38,5.44A58.64,58.64,0,0,0,150.56,180h.05a58.28,58.28,0,0,0,41.47-17.17l34.75-34.75a58.62,58.62,0,0,0,0-82.91Z"/>
+          </svg>
+        </button>
+      </div>
+ 
+      <!-- Article content -->
+      <div class="rich-text">
+        <h4>A record year for institutional rental investment</h4>
+        <p>The UK build-to-rent sector crossed a significant milestone in 2024, with institutional capital deployment reaching an estimated £2.5 billion. This marks a continued acceleration from post-pandemic levels, driven by investor appetite for inflation-linked income streams and the structural undersupply of quality rental housing across Britain's major cities and suburban markets.</p>
+        <p>REalyse data shows the scale of this activity in the planning pipeline: over 214,000 BTR units are currently progressing through planning across England, Scotland, Wales and Northern Ireland, with more than 136,000 units already approved. England dominates the pipeline with over 192,000 units in various stages, while Scotland contributes nearly 19,000 units—reflecting growing institutional interest beyond traditional hotspots.</p>
+ 
+        <h4>Single-family BTR: the emerging growth story</h4>
+        <p>While multifamily apartment schemes in city centres have historically defined the BTR sector, 2024 saw a notable pivot towards single-family rental (SFR) portfolios. Institutional investors added approximately 5,000 single-family homes to their holdings during the year, targeting suburban locations where demand from families is strong but homeownership increasingly out of reach.</p>
+        <p>The appeal is clear: single-family tenants tend to stay longer, reducing void periods and turnover costs. Average tenancy lengths for family homes run two to three years compared with 12 to 18 months for urban flats. For institutions seeking predictable, long-duration income, SFR offers a compelling proposition.</p>
+        <p>Yet the SFR subsector remains nascent. With institutional landlords owning an estimated 2% of the UK's 4.6 million private rented homes, the penetration rate is strikingly low compared to markets like the United States, where institutional SFR ownership exceeds 5% in many metropolitan areas. This gap signals substantial growth potential as more capital enters the space.</p>
+ 
+        <h4>Regional yield dynamics are reshaping investment geography</h4>
+        <p>Institutional capital is increasingly flowing beyond London, drawn by stronger gross yields in regional markets. REalyse analysis of rental listings data reveals a pronounced yield gradient across the UK:</p>
+        <p>• <strong>North East England</strong> leads with average gross yields of 7.31%, alongside robust rent growth of 4.2% year-on-year</p>
+        <p>• <strong>Scotland</strong> follows at 7.23%, with average asking rents of £1,169 per month</p>
+        <p>• <strong>Yorkshire and The Humber</strong> offers 6.53% yields with rents rising 2.9% annually</p>
+        <p>• <strong>North West England</strong>, home to Manchester's maturing BTR market, delivers 6.39% yields</p>
+        <p>By contrast, <strong>London</strong> yields compress to 4.74% despite average rents of £2,747 per month, reflecting elevated capital values. Southern regions including the South East and South West are experiencing rental corrections of 3-4%, suggesting the market may be recalibrating after pandemic-era surges.</p>
+ 
+        <h4>Planning pipeline signals sustained delivery ahead</h4>
+        <p>The forward pipeline supports continued sector expansion. REalyse planning data shows over 5,100 BTR units completed across the UK in recent periods, with more than 1,000 units currently under construction in England alone. Scotland has delivered nearly 1,000 completed BTR units, cementing cities like Edinburgh and Glasgow as credible institutional rental markets.</p>
+        <p>Importantly, planning approvals continue to outpace completions, suggesting several years of delivery ahead. With over 121,000 units approved in England and a further 13,400 in Scotland, the sector has significant committed supply—though construction cost inflation and planning delays remain headwinds.</p>
+ 
+        <h4>Outlook: from niche to mainstream</h4>
+        <p>The trajectory is clear: build-to-rent is transitioning from a niche asset class to a mainstream component of UK residential investment. The combination of persistent housing undersupply, affordability constraints on homeownership, and attractive risk-adjusted returns is drawing a widening pool of capital—from UK pension funds to global sovereign wealth.</p>
+        <p>Single-family BTR, in particular, appears positioned for accelerated growth. With penetration at just 2%, the UK market has room to absorb substantial institutional capital before approaching saturation. The challenge will be sourcing suitable stock: unlike multifamily, where purpose-built towers can be developed at scale, SFR growth depends on fragmented land assembly or partnerships with volume housebuilders.</p>
+        <p>The £2.5 billion deployed in 2024 is likely just the beginning. With structural tailwinds intact and penetration rates offering headroom, institutional BTR investment in the UK has room to run.</p>
+      </div>
+ 
+  <!-- INLINE SHARE CARD -->
+  <div id="inlineCard">
+    <div class="sb-inner">
+      <div class="sb-left">
+        <div class="sb-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M176,156a43.78,43.78,0,0,0-29.09,11L106.1,140.8a44.07,44.07,0,0,0,0-25.6L146.91,89a43.83,43.83,0,1,0-13-20.17L93.09,95a44,44,0,1,0,0,65.94L133.9,187.2A44,44,0,1,0,176,156Zm0-120a20,20,0,1,1-20,20A20,20,0,0,1,176,36ZM64,148a20,20,0,1,1,20-20A20,20,0,0,1,64,148Zm112,72a20,20,0,1,1,20-20A20,20,0,0,1,176,220Z"/></svg></div>
+        <div class="sb-text">
+          <div class="sb-title">Found this insight valuable?</div>
+          <p class="sb-subtitle">Share this article with your network and help others stay ahead of the BTR market.</p>
+        </div>
+      </div>
+      <div class="sb-actions"><a href="#" class="sb-btn sb-btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"/></svg> Share on LinkedIn</a><a href="#" class="sb-btn sb-btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 256 256"><path d="M218.12,209.56l-61-95.8,59.72-65.69a12,12,0,0,0-17.76-16.14L143.81,92.77,106.12,33.56A12,12,0,0,0,96,28H48A12,12,0,0,0,37.88,46.44l61,95.8L39.12,207.93a12,12,0,1,0,17.76,16.14l55.31-60.84,37.69,59.21A12,12,0,0,0,160,228h48a12,12,0,0,0,10.12-18.44ZM166.59,204,69.86,52H89.41l96.73,152Z"/></svg> Post on X</a><a href="#" class="sb-btn sb-btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 256 256"><path d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z"/></svg> Facebook</a><button class="sb-btn sb-btn-secondary" id="iCopy"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 256 256"><path d="M117.18,188.74a12,12,0,0,1,0,17l-5.12,5.12A58.26,58.26,0,0,1,70.6,228h0A58.62,58.62,0,0,1,29.14,127.92L63.89,93.17a58.64,58.64,0,0,1,98.56,28.11,12,12,0,1,1-23.37,5.44,34.65,34.65,0,0,0-58.22-16.58L46.11,144.89A34.62,34.62,0,0,0,70.57,204h0a34.41,34.41,0,0,0,24.49-10.14l5.11-5.12A12,12,0,0,1,117.18,188.74ZM226.83,45.17a58.65,58.65,0,0,0-82.93,0l-5.11,5.11a12,12,0,0,0,17,17l5.12-5.12a34.63,34.63,0,1,1,49,49L175.1,145.86A34.39,34.41,0,0,1,150.61,156h0a34.63,34.63,0,0,1-33.69-26.72,12,12,0,0,0-23.38,5.44A58.64,58.64,0,0,0,150.56,180h.05a58.28,58.28,0,0,0,41.47-17.17l34.75-34.75a58.62,58.62,0,0,0,0-82.91Z"/></svg> Copy link</button></div>
+    </div>
+  </div>
+ 
+ 
+ 
+    </div>
+  </div>
+ 
+  <!-- ── RELATED ARTICLES ─────────────────────────────────────── -->
+  <section class="blog-recent-section">
+    <div class="blog-recent-container">
+      <h6 class="section-heading">More from Our Research Based on Your Interest</h6>
+      <div class="cards-grid">
+ 
+        <div class="blog-card-item">
+          <div class="blog-card">
+            <div class="blog-card-img-placeholder">🏗️</div>
+            <div class="blog-card-body">
+              <p class="blog-card-title">How the late 2024 NPPF reforms are reshaping England's residential planning pipeline</p>
+              <p class="blog-card-summary">Late 2024 NPPF reforms have lifted England's planning approval rates to nearly 70%, but housing delivery and completions still lag behind.</p>
+              <a href="#" class="read-more">
+                <span>Read More</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="#5357f2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="blog-card-item">
+          <div class="blog-card">
+            <div class="blog-card-img-placeholder">🏠</div>
+            <div class="blog-card-body">
+              <p class="blog-card-title">Section 21 abolition reshapes the rental landscape as professional landlords gain competitive edge</p>
+              <p class="blog-card-summary">Section 21 ends May 2026 as the Renters' Rights Act reshapes England's rental market, favouring professional landlords and driving BTR investment.</p>
+              <a href="#" class="read-more">
+                <span>Read More</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="#5357f2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="blog-card-item">
+          <div class="blog-card">
+            <div class="blog-card-img-placeholder">📊</div>
+            <div class="blog-card-body">
+              <p class="blog-card-title">Institutional BTR investments reach £2.5bn in 2024 as build-to-rent pipeline expands across UK regions</p>
+              <p class="blog-card-summary">UK build-to-rent investments hit £2.5bn in 2024 with 120,000+ units under construction. BTR at 2% penetration signals multi-year growth ahead.</p>
+              <a href="#" class="read-more">
+                <span>Read More</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="#5357f2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ── FOOTER ───────────────────────────────────────────────── -->
+  <footer class="new-footer">
+    <div class="custom-container">
+      <div class="contact-info">
+        <div class="cont-info-box _1">
+          <div class="icon-area">📞</div>
+          <div>
+            <h5 class="heading-63">Drop Us A Call</h5>
+            <a class="cont-link" href="tel:+442039835958">+44 (0)20 3983 5958</a>
+          </div>
+        </div>
+        <div class="divider-2"></div>
+        <div class="cont-info-box _2">
+          <div class="icon-area">✉️</div>
+          <div>
+            <h5 class="heading-63">Email Us</h5>
+            <a class="cont-link" href="mailto:sales@realyse.com">sales@realyse.com</a>
+          </div>
+        </div>
+        <div class="divider-2"></div>
+        <div class="cont-info-box _3">
+          <div class="icon-area">📍</div>
+          <div>
+            <h5 class="heading-63">Reach Us At</h5>
+            <p class="cont-link" style="margin:0;">Audley House, 12-12A Margaret Street, London, W1W 8JQ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="footer-middle-part">
+      <div class="footer-logo-area">
+        <span class="footer-logo-text">R<span>≡</span>alyse</span>
+      </div>
+      <div class="social-media">
+        <a href="#" class="social-icon-box" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon-box" aria-label="X / Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M218.12,209.56l-61-95.8,59.72-65.69a12,12,0,0,0-17.76-16.14L143.81,92.77,106.12,33.56A12,12,0,0,0,96,28H48A12,12,0,0,0,37.88,46.44l61,95.8L39.12,207.93a12,12,0,1,0,17.76,16.14l55.31-60.84,37.69,59.21A12,12,0,0,0,160,228h48a12,12,0,0,0,10.12-18.44ZM166.59,204,69.86,52H89.41l96.73,152Z"/>
+          </svg>
+        </a>
+      </div>
+      <nav class="footer-menu">
+        <a href="#" class="link-2">Home</a>
+        <a href="#" class="link-2">Platform</a>
+        <a href="#" class="link-2">Reports</a>
+      </nav>
+    </div>
+ 
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p class="copyright">Copyright © 2026 REalyse. All rights reserved.</p>
+        <div class="footer-last-menu">
+          <a href="#" class="link-3">Terms &amp; Conditions</a>
+          <a href="#" class="link-3">API Terms of Use</a>
+          <a href="#" class="link-3">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- FLOATING BANNER -->
+  <div id="floatingBanner">
+    <div class="sb-left">
+      <div class="sb-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M176,156a43.78,43.78,0,0,0-29.09,11L106.1,140.8a44.07,44.07,0,0,0,0-25.6L146.91,89a43.83,43.83,0,1,0-13-20.17L93.09,95a44,44,0,1,0,0,65.94L133.9,187.2A44,44,0,1,0,176,156Zm0-120a20,20,0,1,1-20,20A20,20,0,0,1,176,36ZM64,148a20,20,0,1,1,20-20A20,20,0,0,1,64,148Zm112,72a20,20,0,1,1,20-20A20,20,0,0,1,176,220Z"/></svg></div>
+      <div class="sb-text">
+        <div class="sb-title">Found this insight valuable?</div>
+        <p class="sb-subtitle">Share this article with your network and help others stay ahead of the BTR market.</p>
+      </div>
+    </div>
+    <div class="sb-actions"><a href="#" class="sb-btn sb-btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"/></svg> Share on LinkedIn</a><a href="#" class="sb-btn sb-btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 256 256"><path d="M218.12,209.56l-61-95.8,59.72-65.69a12,12,0,0,0-17.76-16.14L143.81,92.77,106.12,33.56A12,12,0,0,0,96,28H48A12,12,0,0,0,37.88,46.44l61,95.8L39.12,207.93a12,12,0,1,0,17.76,16.14l55.31-60.84,37.69,59.21A12,12,0,0,0,160,228h48a12,12,0,0,0,10.12-18.44ZM166.59,204,69.86,52H89.41l96.73,152Z"/></svg> Post on X</a><a href="#" class="sb-btn sb-btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 256 256"><path d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z"/></svg> Facebook</a><button class="sb-btn sb-btn-secondary" id="fCopy"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 256 256"><path d="M117.18,188.74a12,12,0,0,1,0,17l-5.12,5.12A58.26,58.26,0,0,1,70.6,228h0A58.62,58.62,0,0,1,29.14,127.92L63.89,93.17a58.64,58.64,0,0,1,98.56,28.11,12,12,0,1,1-23.37,5.44,34.65,34.65,0,0,0-58.22-16.58L46.11,144.89A34.62,34.62,0,0,0,70.57,204h0a34.41,34.41,0,0,0,24.49-10.14l5.11-5.12A12,12,0,0,1,117.18,188.74ZM226.83,45.17a58.65,58.65,0,0,0-82.93,0l-5.11,5.11a12,12,0,0,0,17,17l5.12-5.12a34.63,34.63,0,1,1,49,49L175.1,145.86A34.39,34.41,0,0,1,150.61,156h0a34.63,34.63,0,0,1-33.69-26.72,12,12,0,0,0-23.38,5.44A58.64,58.64,0,0,0,150.56,180h.05a58.28,58.28,0,0,0,41.47-17.17l34.75-34.75a58.62,58.62,0,0,0,0-82.91Z"/></svg> Copy link</button></div>
+  </div>
+  <script>
+  (function () {
+    var banner = document.getElementById('floatingBanner');
+    var card   = document.getElementById('inlineCard');
+    if (!banner || !card) return;
+ 
+    function update() {
+      var r  = card.getBoundingClientRect();
+      var vh = window.innerHeight;
+      if (r.top < vh && r.bottom > 0) {
+        banner.classList.add('hidden');
+        return;
+      }
+      banner.classList.remove('hidden');
+      banner.classList[r.top < vh + 300 ? 'add' : 'remove']('bar');
+    }
+ 
+    function copyLink(btn) {
+      navigator.clipboard.writeText(window.location.href).then(function () {
+        var orig = btn.innerHTML;
+        btn.innerHTML = '&#10003; Copied!';
+        setTimeout(function () { btn.innerHTML = orig; }, 2000);
+      });
+    }
+ 
+    ['fCopy','iCopy','copyLinkBtn'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener('click', function () { copyLink(this); });
+    });
+ 
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  }());
+  </script>
+ 
+</body>
+</html>
